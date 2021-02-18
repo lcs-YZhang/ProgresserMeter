@@ -12,6 +12,9 @@ struct ContentView: View {
     // For driving animation to reveal rectangle with progress meter fill
     @State private var progressMeterOffset = CGSize.zero
     
+    // Width of the meter
+       let meterWidth: CGFloat = 100
+    
     var body: some View {
         VStack {
             ZStack {

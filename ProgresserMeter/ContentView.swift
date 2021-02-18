@@ -22,7 +22,9 @@ struct ContentView: View {
        let verticalPadding: CGFloat = 44
     
     var body: some View {
-        VStack {
+        GeometryReader { geometry in
+         
+            VStack {
             ZStack {
                 // "Fill" for progress meter; stationary
                 Rectangle()
@@ -51,10 +53,9 @@ struct ContentView: View {
                             .stroke(Color.primary, lineWidth: 2)
                     )
 
-            }
-
-        }
-
+             }
+          }
+       }
     }
 }
 

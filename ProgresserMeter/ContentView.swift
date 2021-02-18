@@ -15,6 +15,9 @@ struct ContentView: View {
     // Width of the meter
        let meterWidth: CGFloat = 100
     
+    // Thickness of meter's border
+    let borderWidth: CGFloat = 2
+    
     var body: some View {
         VStack {
             ZStack {

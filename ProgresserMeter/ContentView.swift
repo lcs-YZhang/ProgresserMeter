@@ -16,7 +16,10 @@ struct ContentView: View {
        let meterWidth: CGFloat = 100
     
     // Thickness of meter's border
-    let borderWidth: CGFloat = 2
+       let borderWidth: CGFloat = 2
+    
+    // Padding above and below progress meter
+       let verticalPadding: CGFloat = 44
     
     var body: some View {
         VStack {
